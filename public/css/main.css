@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  background-image: url('../img/chalkboard.jpg');
+  font-family: Tahoma, sans-serif;
+}
+
+.app {
+  margin: 30px auto;
+  padding: 20px 30px;
+  background-image: url('../img/dust_scratches.png');
+  width: 750px;
+  border-radius: 15px;
+  box-shadow: 0 15px 46px -7px rgba(255,255,255,0.5);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.heading {
+  width: 25%;
+  font-size: 28px;
+}
+
+.filter {
+  width: 75%;
+}
+
+.filter__input-label {
+  display: flex;
+  align-items: center;
+}
+
+.filter__label {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.filter__input {
+  display: block;
+  height: 30px;
+  flex-grow: 1;
+  border-radius: 15px;
+  padding: 0 15px;
+}
+
+.orders {
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.order {
+  margin-bottom: 30px;
+}
+
+.order__about {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 10px 29px 0 rgba(0, 0, 0, 0.11);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.order__about p {
+  margin-right: 30px;
+}
+
+.order__about b {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.order__toggle-view {
+  position: relative;
+  height: 35px;
+  width: 35px;
+  background: none;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+.order__toggle-view::before {
+  content: '⯆';
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-size: 30px;
+}
+
+.order__toggle-view--active::before {
+  content: '⯅';
+}
+
+.order__content-list {
+  display: none;
+  list-style-type: none;
+  margin-top: 15px;
+  margin-bottom: -15px;
+}
+
+.order__content-list--visible {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-part {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 10px 29px 0 rgba(0, 0, 0, 0.11);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.order-part p {
+  margin-right: 30px;
+}
+
+.order-part b {
+  display: block;
+  margin-bottom: 5px;
+}
+
+
